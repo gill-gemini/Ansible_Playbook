@@ -1,0 +1,23 @@
+- hosts: a
+  become: true
+  remote_user: root
+  vars:
+    app_name: webserver
+    path: "/deployed/webserver"
+    repo_url: "https://github.com/gill-gemini/TestServer.git"
+    version: "master"
+    repo_remote: origin
+    repo_version: master
+    webapps_dir: /deployed
+    name_file: simpleserver.py
+  pre_tasks:
+    - name: Ping
+      ping:
+      remote_user: ubuntu
+  roles:
+    - { role: install_python , tags: python}
+    - { role: git_pull, tags: git}
+    - { role: web_server_start, tags: web_server}
+
+  post_tasks:
+    #TODO
