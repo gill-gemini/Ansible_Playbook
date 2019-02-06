@@ -4,7 +4,7 @@ Simple Ansible playbook for setting up a webserver.
 
 Add you inventory(hosts) file in the "inventories" folder and change the path in the makefile.
 
-To Build:
+To Build:<br />
     make <br />
     make webserver <br />
     
