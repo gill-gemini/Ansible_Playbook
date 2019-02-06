@@ -1,0 +1,10 @@
+[a]
+35.159.30.49
+
+[all:vars]
+
+ansible_host= 35.159.30.49
+ansible_port= 22
+ansible_user= ubuntu
+
+
