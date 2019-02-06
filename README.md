@@ -9,21 +9,5 @@ To Build:<br />
     make webserver <br />
     
     
-├─ Makefile <br />
-├─ docs <br />
-│   └── readme.txt <br />
-├─ inventories <br />
-│   └── hosts <br />
-├─ playbook_deployer.retry <br />
-├─ playbook_deployer.yml <br />
-└─ roles <br />
-    ├─ git_pull <br />
-    │   └── tasks <br />
-    │       └── main.yml <br />
-    ├─ install_python <br />
-    │   └── tasks <br />
-    │       └── main.yml <br />
-    └─ web_server_start <br />
-        └── tasks <br />
-            └── main.yml <br />
+
     
